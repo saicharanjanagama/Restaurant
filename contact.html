@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="brand">
+                <a href="index.html"><span class="logo"><img src="images/logo.webp"></span> <span class="brand-text">F L A V O R H O U S E</span></a>
+            </div>
+
+            <button id="theme-toggle" aria-label="Toggle theme" class="icon-btn" title="Toggle theme">
+                <span id="theme-icon">🌙</span>
+            </button>
+
+            <button class="hamburger" aria-label="Open menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="nav-links" role="menubar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html" class="active">Contact & Book</a></li>
+                <li><a href="bookings.html">Bookings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container contact-page">
+        <section class="contact-intro fade-in">
+            <h1>Contact Us & Make a Booking</h1>
+            <p>Address: 123 Main St, City — Phone: (123) 456-7890 — Email: info@flavorhouse.com</p>
+        </section>
+
+        <section class="contact-grid fade-in">
+            <form id="booking-form" novalidate>
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="date">Preferred Date *</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Preferred Time</label>
+                <input type="time" id="time" name="time">
+
+                <label for="party">Party Size</label>
+                <input type="number" id="party" name="party" min="1" max="20" value="2">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Any special requests?"></textarea>
+
+                <button type="submit" class="btn">Book Now</button>
+
+                <div id="form-message" role="status" aria-live="polite"></div>
+            </form>
+            
+
+            <div class="map">
+                <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=2880 Broadway, New York&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://wheremylocation.com/">my location</a></div><style>.mapouter{position:relative;text-align:right;width:600px;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:600px;height:400px;}.gmap_iframe {width:600px!important;height:400px!important;}</style></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-inner">
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-whatsapp"></i>
+                <a href="https://www.linkedin.com/in/saicharanjanagama/"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <div><p>&copy; <span id="year"></span> FlavorHouse. All rights reserved.</p></div>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" title="Back to top">↑</button>
+    <script src="js/script.js" defer></script>
+</body>
+</html>

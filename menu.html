@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="brand">
+                <a href="index.html"><span class="logo"><img src="images/logo.webp"></span> <span class="brand-text">F L A V O R H O U S E</span></a>
+            </div>
+
+            <button id="theme-toggle" aria-label="Toggle theme" class="icon-btn" title="Toggle theme">
+                <span id="theme-icon">🌙</span>
+            </button>
+
+            <button class="hamburger" aria-label="Open menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="nav-links" role="menubar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="contact.html">Contact & Book</a></li>
+                <li><a href="bookings.html">Bookings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="menu-top fade-in">
+            <h1>Our Menu</h1>
+            <p>Curated selection of Italian favorites — updated seasonally.</p>
+            <div class="menu-controls">
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="appetizers">Appetizers</button>
+                    <button class="filter-btn" data-filter="mains">Mains</button>
+                    <button class="filter-btn" data-filter="desserts">Desserts</button>
+                </div>
+                <input id="search" type="search" placeholder="Search dishes..." aria-label="Search dishes">
+            </div>
+        </section>
+
+        <section class="menu-items-grid fade-in" id="menu-items">
+            <!-- Each item has data-category to filter -->
+            <article class="item" data-category="appetizers">
+                <img src="images/Bruschetta.jpg" alt="Bruschetta" loading="lazy">
+                <h3>Bruschetta</h3>
+                <p class="desc">Toasted bread with tomatoes, basil, and olive oil.</p>
+                <p class="price">$8.99</p>
+            </article>
+
+            <article class="item" data-category="appetizers">
+                <img src="images/Antipasto Platter.webp" alt="Antipasto Platter" loading="lazy">
+                <h3>Antipasto Platter</h3>
+                <p class="desc">Assortment of cured meats, cheeses, and olives.</p>
+                <p class="price">$12.99</p>
+            </article>
+
+
+            <article class="item" data-category="mains">
+                <img src="images/Margherita Pizza.jpg" alt="Margherita Pizza" loading="lazy">
+                <h3>Margherita Pizza</h3>
+                <p class="desc">Fresh mozzarella, tomato sauce, basil.</p>
+                <p class="price">$14.99</p>
+            </article>
+
+
+            <article class="item" data-category="mains">
+                <img src="images/Spaghetti Carbonara.avif" alt="Spaghetti Carbonara" loading="lazy">
+                <h3>Spaghetti Carbonara</h3>
+                <p class="desc">Creamy sauce with pancetta and Parmesan.</p>
+                <p class="price">$16.99</p>
+            </article>
+
+
+            <article class="item" data-category="mains">
+                <img src="images/Osso Buco.jpg" alt="Osso Buco" loading="lazy">
+                <h3>Osso Buco</h3>
+                <p class="desc">Braised veal shanks with saffron risotto.</p>
+                <p class="price">$24.99</p>
+            </article>
+
+            <article class="item" data-category="desserts">
+                <img src="images/Tiramisu.webp" alt="Tiramisu" loading="lazy">
+                <h3>Tiramisu</h3>
+                <p class="desc">Coffee-soaked ladyfingers with mascarpone.</p>
+                <p class="price">$7.99</p>
+            </article>
+
+
+            <article class="item" data-category="desserts">
+                <img src="images/Gelato.webp" alt="Gelato" loading="lazy">
+                <h3>Gelato</h3>
+                <p class="desc">House-made Italian ice cream.</p>
+                <p class="price">$5.99</p>
+            </article>
+            
+
+            <article class="item" data-category="appetizers">
+                <img src="images/Antipasto Platter.webp" alt="Antipasto Platter" loading="lazy">
+                <h3>Antipasto Platter</h3>
+                <p class="desc">Assortment of cured meats, cheeses, and olives.</p>
+                <p class="price">$12.99</p>
+            </article>
+
+
+            <article class="item" data-category="mains">
+                <img src="images/Margherita Pizza.jpg" alt="Margherita Pizza" loading="lazy">
+                <h3>Margherita Pizza</h3>
+                <p class="desc">Fresh mozzarella, tomato sauce, basil.</p>
+                <p class="price">$14.99</p>
+            </article>
+
+
+            <article class="item" data-category="mains">
+                <img src="images/Spaghetti Carbonara.avif" alt="Spaghetti Carbonara" loading="lazy">
+                <h3>Spaghetti Carbonara</h3>
+                <p class="desc">Creamy sauce with pancetta and Parmesan.</p>
+                <p class="price">$16.99</p>
+            </article>
+
+
+            <article class="item" data-category="mains">
+                <img src="images/Osso Buco.jpg" alt="Osso Buco" loading="lazy">
+                <h3>Osso Buco</h3>
+                <p class="desc">Braised veal shanks with saffron risotto.</p>
+                <p class="price">$24.99</p>
+            </article>
+
+            <article class="item" data-category="desserts">
+                <img src="images/Tiramisu.webp" alt="Tiramisu" loading="lazy">
+                <h3>Tiramisu</h3>
+                <p class="desc">Coffee-soaked ladyfingers with mascarpone.</p>
+                <p class="price">$7.99</p>
+            </article>
+
+
+            <article class="item" data-category="desserts">
+                <img src="images/Gelato.webp" alt="Gelato" loading="lazy">
+                <h3>Gelato</h3>
+                <p class="desc">House-made Italian ice cream.</p>
+                <p class="price">$5.99</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-inner">
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-whatsapp"></i>
+                <a href="https://www.linkedin.com/in/saicharanjanagama/"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <div><p>&copy; <span id="year"></span> FlavorHouse. All rights reserved.</p></div>
+        </div>
+    </footer>
+
+
+
+    <button id="scrollTopBtn" title="Back to top">↑</button>
+    <script src="js/script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="brand">
+                <a href="index.html"><span class="logo"><img src="images/logo.webp"></span> <span class="brand-text">F L A V O R H O U S E</span></a>
+            </div>
+
+            <button id="theme-toggle" aria-label="Toggle theme" class="icon-btn" title="Toggle theme">
+                <span id="theme-icon">🌙</span>
+            </button>
+
+            <button class="hamburger" aria-label="Open menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="nav-links" role="menubar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact & Book</a></li>
+                <li><a href="bookings.html" class="active">Bookings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="bookings-list fade-in">
+            <h1>Saved Bookings</h1>
+            <div id="bookings-container"></div>
+            <button id="clear-bookings" class="btn outline">Clear All Bookings</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-inner">
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-whatsapp"></i>
+                <a href="https://www.linkedin.com/in/saicharanjanagama/"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <div><p>&copy; <span id="year"></span> FlavorHouse. All rights reserved.</p></div>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" title="Back to top">↑</button>
+    <script src="js/script.js" defer></script>
+</body>
+</html>

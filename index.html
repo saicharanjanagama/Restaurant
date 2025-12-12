@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F L A V O R H O U S E</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <div id="preloader" aria-hidden="true"></div>
+
+    <header>
+        <nav class="container">
+            <div class="brand">
+                <a href="index.html"><span class="logo"><img src="images/logo.webp"></span> <span class="brand-text">F L A V O R H O U S E</span></a>
+            </div>
+
+            <button id="theme-toggle" aria-label="Toggle theme" class="icon-btn" title="Toggle theme">
+                <span id="theme-icon">🌙</span>
+            </button>
+
+            <button class="hamburger" aria-label="Open menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="nav-links" role="menubar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact & Book</a></li>
+                <li><a href="bookings.html">Bookings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-inner container">
+                <div class="hero-copy fade-in">
+                    <h1>Welcome to FlavorHouse</h1>
+                    <p>Fresh, authentic Italian cuisine served with love. Reserve a table or explore our menu.</p>
+                    <div class="hero-ctas">
+                        <a class="btn" href="menu.html">View Menu</a>
+                        <a class="btn outline" href="contact.html">Book a Table</a>
+                    </div>
+                </div>
+                <div class="hero-media fade-in">
+                    <div class="hero-slider">
+                        <img src="images/hero.avif" alt="Restaurant interior">
+                        <img src="images/hero1.avif" alt="Dining setup">
+                        <img src="images/hero2.jpg" alt="Italian food table">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+
+        <section class="about container fade-in">
+            <div class="about-inner container">
+
+                <div class="about-media fade-in">
+                    <div class="about-slider">
+                        <img src="images/chef.jpg" alt="Restaurant interior">
+                        <img src="images/Dine-In.jpg" alt="Dining setup">
+                        <img src="images/about.jpg" alt="Italian food table">
+                    </div>
+                </div>
+                <div>
+                    <h2>About Us</h2>
+                    <p>At FlavorHouse, dining is more than a meal — it is an experience crafted with passion, quality, and authenticity. For over a decade, we have celebrated the essence of Italian cuisine through hand-crafted pasta, wood-fired pizzas, and signature dishes inspired by timeless culinary traditions. 
+                    Our team of chefs brings artistry to the kitchen, using fresh, locally sourced ingredients to ensure every bite is rich, vibrant, and unforgettable.
+                    With a warm atmosphere, contemporary design, and a commitment to exceptional service, FlavorHouse is the perfect place to gather, celebrate, and savor the flavors of Italy.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery container fade-in">
+            <h2>Our Ambiance</h2>
+            <p>A space crafted for comfort | A mood set for connection | An atmosphere made for unforgettable dining.</p><br>
+            <div class="gallery-grid">
+                <img src="images/family.jpg" alt="Dining room" loading="lazy">
+                <img src="images/out.jpg" alt="Outdoor seating" loading="lazy">
+                <img src="images/BarArea.jpg" alt="Bar area" loading="lazy">
+            </div>
+        </section>
+
+        <section class="testimonials container fade-in" aria-label="testimonials">
+            <h2>What Our Guests Say</h2>
+            <div class="carousel" id="testimonial-carousel">
+                <div class="testimonial active">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <blockquote>"Amazing pasta! Highly recommend."</blockquote>
+                    <cite>- Maria S.</cite>
+                </div>
+                <div class="testimonial">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <blockquote>"Best pizza in town. Cozy atmosphere."</blockquote>
+                    <cite>- John D.</cite>
+                </div>
+                <div class="testimonial">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <blockquote>"Family-friendly and delicious!"</blockquote>
+                    <cite>- Emily R.</cite>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-inner">
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-whatsapp"></i>
+                <a href="https://www.linkedin.com/in/saicharanjanagama/"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <div><p>&copy; <span id="year"></span> FlavorHouse. All rights reserved.</p></div>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" title="Back to top">↑</button>
+
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
